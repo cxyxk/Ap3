@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ap</string>
+    <string name="d3">单③</string>
+    <string name="s3">双③</string>
+    <string name="d4">单④</string>
+    <string name="s4">双④</string>
+    <string name="zuo">左</string>
+    <string name="you">右</string>
+    <string name="shuliang">数量:</string>
+    <string name="zhanbi">占比:</string>
+    <string name="url">www.019231.com:8866/</string>
+    <string name="loginUrl">www.019231.com:8866/?aff=602617</string>
+    <string name="registerUrl">www.019231com:8866/?aff=602617</string>
+    <string name="nav_yc">浏览器1</string>
+    <string name="nav_web">浏览器2</string>
+    <string name="nav_guest">计算</string>
+    <string name="permission_camera">摄像头</string>
+    <string name="permission_storage">文件</string>
+    <string name="permission_accounts">信息</string>
+    <string name="permission_phone">状态</string>
+    <string name="permission_location">定位</string>
+    <string name="permission_audio">录音</string>
+</resources>

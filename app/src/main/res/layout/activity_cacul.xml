@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<WebView
+		android:id="@+id/web1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="15"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="＜后退"
+			android:layout_weight="1.0"
+			android:id="@+id/webback1"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="前进＞"
+			android:layout_weight="1.0"
+			android:id="@+id/webforward1"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="登陆"
+			android:layout_weight="1.0"
+			android:id="@+id/weblogin1"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="注册"
+			android:layout_weight="1.0"
+			android:id="@+id/webregister1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
