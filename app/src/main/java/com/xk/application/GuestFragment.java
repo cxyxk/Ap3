@@ -28,6 +28,7 @@ public class GuestFragment extends Fragment {
     // Browser实体集合
     private final List<Browser> browsers = new ArrayList<>();
     BrowserAdapter adapter;
+    private long seed = 0;
     TzCacul tzCacul = new TzCacul();
     int cycle = 0;
 
