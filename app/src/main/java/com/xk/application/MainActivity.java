@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         fragmentList.add(new YuCeFragment());
         fragmentList.add(new WebFragment());
         fragmentList.add(new GuestFragment());
-        fragmentList.add(new RandomFragment());
+        //fragmentList.add(new RandomFragment());
     }
 
     @Override
