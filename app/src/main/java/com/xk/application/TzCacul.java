@@ -13,22 +13,6 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class TzCacul {
-    private int dFlag, sFlag;
-    private int dsFlagT4 = 0;
-    private int zyFlagT4 = 0;
-    private int tzFlagF4 = 0;
-    private int dsFlagF4 = 0;
-    private int zyFlagF4 = 0;
-    private int tzFlagT4 = 0;
-    private int dsFlagT6 = 0;
-    private int zyFlagF6 = 0;
-    private int tzFlagT6 = 0;
-    private int dsFlagF6 = 0;
-    private int zyFlagT6 = 0;
-    private int tzFlagF6 = 0;
-    private int fd4 = 0;
-    private int fs3 = 0;
-    private int fs4 = 0;
 
     private List<TZData> tzList = new CopyOnWriteArrayList<>();//原始数据
     private List<Integer> ds7_10 = Collections.synchronizedList(new ArrayList<>());
@@ -40,12 +24,6 @@ public class TzCacul {
     private List<Integer> dsListT4 = Collections.synchronizedList(new ArrayList<>());//单双正确规律1+2数据
     private List<Integer> zyListT4 = Collections.synchronizedList(new ArrayList<>());//左右正确规律1+2数据
     private List<Integer> tzListT4 = Collections.synchronizedList(new ArrayList<>());//梯子正确规律1+2数据
-    private List<Integer> dsList6 = Collections.synchronizedList(new ArrayList<>());//单双2+3正确规律数据
-    private List<Integer> zyList6 = Collections.synchronizedList(new ArrayList<>());//左右2+3正确规律数据
-    private List<Integer> tzList6 = Collections.synchronizedList(new ArrayList<>());//梯子2+3正确规律数据
-    private List<Integer> dsListT6 = Collections.synchronizedList(new ArrayList<>());//单双正确规律1+2衍生2+3正确规律数据
-    private List<Integer> zyListT6 = Collections.synchronizedList(new ArrayList<>());//左右正确规律1+2衍生2+3正确规律数据
-    private List<Integer> tzListT6 = Collections.synchronizedList(new ArrayList<>());//梯子正确规律1+2衍生2+3正确规律数据
 
     public TzCacul() {
 
@@ -277,9 +255,6 @@ public class TzCacul {
 
                 }
             }
-            dsList6 = list;
-            zyList6 = list1;
-            tzList6 = list2;
         }
 
         if (dsListT4.size() > 5) {
@@ -299,7 +274,6 @@ public class TzCacul {
                 }
 
             }
-            dsListT6 = list;
         }
         if (zyListT4.size() > 5) {
             List<Integer> list = new ArrayList<>();
@@ -320,7 +294,6 @@ public class TzCacul {
             }
 
 
-            zyListT6 = list;
         }
         if (tzListT4.size() > 5) {
 
@@ -341,7 +314,6 @@ public class TzCacul {
 
                 }
             }
-            tzListT6 = list;
 
         }
     }
