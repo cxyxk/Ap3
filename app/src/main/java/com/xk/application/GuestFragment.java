@@ -52,17 +52,13 @@ public class GuestFragment extends Fragment {
         Button g_s4 = view.findViewById(R.id.g_s4);
         Button g_ht = view.findViewById(R.id.g_ht);
         g_d3.setOnClickListener(view1 -> {
-            Calendar ca = null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                ca = Calendar.getInstance(Locale.US);
-            }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                cycle = (ca.get(Calendar.HOUR) * 60) + (ca.get(Calendar.MINUTE) + 1);
-            }
-            String dated = null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                dated = "第" + ca.get(Calendar.YEAR) + "0" + ((ca.get(Calendar.MONTH)) + 1) + ca.get(Calendar.DATE) + cycle + "期";
-            }
+            Calendar ca;
+            ca = Calendar.getInstance(Locale.US);
+            cycle = (ca.get(Calendar.HOUR) * 60) + (ca.get(Calendar.MINUTE) + 1);
+
+            String dated;
+            dated = "第" + ca.get(Calendar.YEAR) + "0" + ((ca.get(Calendar.MONTH)) + 1) + ca.get(Calendar.DATE) + cycle + "期";
+
             tzCacul.getTzList().add(new TZData("<font color='#0072E3'>" + getString(R.string.d3) + "</font>", getString(R.string.you), 1, 2, 3));
 
             tzCacul.initDSValueT();
@@ -72,14 +68,10 @@ public class GuestFragment extends Fragment {
             }
         });
         g_s3.setOnClickListener(view12 -> {
-            Calendar ca = null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                ca = Calendar.getInstance(Locale.US);
-            }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                cycle = (ca.get(Calendar.HOUR) * 60) + (ca.get(Calendar.MINUTE) + 1);
-            }
-            assert ca != null;
+            Calendar ca;
+            ca = Calendar.getInstance(Locale.US);
+
+            cycle = (ca.get(Calendar.HOUR) * 60) + (ca.get(Calendar.MINUTE) + 1);
             String dated = "第" + ca.get(Calendar.YEAR) + "0" + ((ca.get(Calendar.MONTH)) + 1) + ca.get(Calendar.DATE) + cycle + "期";
 
 
